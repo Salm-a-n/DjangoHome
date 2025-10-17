@@ -1,0 +1,27 @@
+.green{
+    color: green;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: underline;
+}
+.red{
+    color: red;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: underline;
+}
+p{
+    display: inline;
+
+}
+.warning{
+    color: orange;
+    font-size: larger;
+    font-weight: bold;
+
+}
+body{
+    background-color: aqua;
+    height: 100vh;
+
+}

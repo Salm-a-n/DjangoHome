@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student_details</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    {% if my_student %}
+    <ul>
+        {% for student in my_student %}
+        <li>
+            <p>NAME={{student.name}}</p>
+                {% if student.Passed %}
+                    <p class="green">Passed</p>
+                    {% else %}
+                    <p class="red">Failed</p>
+                {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p class="warning">No students found </p>
+    {% endif %}
+</body>
+</html>
