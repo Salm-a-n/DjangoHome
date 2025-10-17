@@ -9,5 +9,5 @@ def show_student(request):
         {'name':'Fidhaan', 'age': 23,'Passed': True},
     ]
     context={'my_student':mystudent}
-    return render(request,'student.html',context)
+    return render(request,'student.html',context) 
 # Create your views here.

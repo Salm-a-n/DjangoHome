@@ -11,7 +11,7 @@
     {% if my_student %}
     <ul>
         {% for student in my_student %}
-        <li>
+        <li class="bor">
             <p>NAME={{student.name}}</p>
                 {% if student.Passed %}
                     <p class="green">Passed</p>
@@ -24,5 +24,6 @@
     {% else %}
     <p class="warning">No students found </p>
     {% endif %}
+    </div>
 </body>
 </html>
