@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data recieved</title>
+     {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h2>Hello {{name}}, your favorite color is {{colour}}</h2>
+    <table>
+    {% for x,y in formData.items %}
+     <tr>
+         <td>{{ x }}</td>
+         <td>:</td>
+         <td>{{ y }}</td>
+     </tr>
+    {% endfor %}
+    </table>
+</body>
+</html>
