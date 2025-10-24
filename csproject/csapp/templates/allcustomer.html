@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>All Customers</title></head>
+<body>
+    <h1>All Customers</h1>
+    <ul>
+        {% for cust in all_cust %}
+            <li>{{ cust.name }} - {{ cust.email }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

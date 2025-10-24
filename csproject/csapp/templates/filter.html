@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Filtered Customers</title></head>
+<body>
+    <h1>Customers with @example.com Emails</h1>
+    <ul>
+        {% for cust in filt_cust %}
+            <li>{{ cust.name }} - {{ cust.email }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
