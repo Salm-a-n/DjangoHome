@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Page{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+<body>
+    <header>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'about' %}">about-us</a>
+        <a href="{% url 'contact' %}">contat-us</a>
+    </header>
+    
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>Website will be under maintenance this Saturday</p>
+        <p>New blog section coming soon!</p>
+        <p>contact us for more information</p>
+    </footer>
+</body>
+</html>
