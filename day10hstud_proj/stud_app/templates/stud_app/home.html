@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all Students</title>
+</head>
+<body>
+     <nav> <a href="{% url 'create_student' %}">Add New Students</a></nav>
+
+<h1>All Students...</h1>
+<table border="1">
+    <tr><th>Student_Name</th>
+        <th>Calss</th>
+        <th>Age</th>
+        <th >Actions</th>
+    </tr>
+    {%for student in stud_list%}
+    <tr>
+    <td>{{student.name}}</td>
+    <td>{{student.standard }} </td> 
+    <td>{{student.age }}</td>
+    <td ><a href="{%url 'update_student' book.id %}"type="submit" value="edit">Edit</a></td>
+    <td><a href="{% url 'delete_student' book.name %}">Delete</a></td>
+    </tr>
+    {% endfor %}
+</table> 
+
+</body>
+
+</html>
