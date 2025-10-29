@@ -24,8 +24,8 @@ def update_student(request, id):
     else:
         form =std_form(instance=stud_list)           
     return render(request, 'stud_app/edit.html', {'form': form})
-def delete_student(request,title):
-    stud_list=Std_manage.objects.get(title=title)  
+def delete_student(request,name):
+    stud_list=Std_manage.objects.get(name=name)  
     if request.method == 'POST':
         stud_list.delete()
         return redirect('home')

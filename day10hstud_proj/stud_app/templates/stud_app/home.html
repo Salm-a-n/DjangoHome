@@ -20,8 +20,8 @@
     <td>{{student.name}}</td>
     <td>{{student.standard }} </td> 
     <td>{{student.age }}</td>
-    <td ><a href="{%url 'update_student' book.id %}"type="submit" value="edit">Edit</a></td>
-    <td><a href="{% url 'delete_student' book.name %}">Delete</a></td>
+    <td ><a href="{%url 'update_student' student.id %}"type="submit" value="edit">Edit</a></td>
+    <td><a href="{% url 'delete_student' student.name %}">Delete</a></td>
     </tr>
     {% endfor %}
 </table> 
