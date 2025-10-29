@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>delete</title>
 </head>
 <body>
     <h3>deletion page warning</h3>
 <form method="post" action="">
     {% csrf_token %}
-    <p>Are you sure you want to delete "{{book.title}}"?</p>
+    <p>Are you sure you want to delete "{{stud_list.name}}"?</p>
     <input type="submit" value="Confirm">
 </form>
 </body>
